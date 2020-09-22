@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: jims
+Build-Jdk: 1.8.0_20
+Implementation-Title: demo2
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.cssl
+Main-Class: ${start-class}
+

@@ -1,0 +1,18 @@
+
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.cssl.controller.DataController required a bean of type 'com.cssl.service.UsersService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cssl.service.UsersService' in your configuration.
+

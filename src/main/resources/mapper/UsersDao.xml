@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- namespace和dao接口全路径映射 -->
+<mapper namespace="com.cssl.dao.UsersDao">
+
+	<insert id="insert" parameterType="Users" keyColumn="id" keyProperty="id">
+		insert into users(username,password) values (#{username},#{password})
+	</insert>	
+	
+	<select id="select" resultType="Users">
+		select * from users
+	</select>
+	
+</mapper>

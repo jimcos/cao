@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../demo3/pom.xml" />
+        <option value="$PROJECT_DIR$/../votingsy/pom.xml" />
+        <option value="$PROJECT_DIR$/../redis/pom.xml" />
+        <option value="$PROJECT_DIR$/../mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/../eureka-server6001/pom.xml" />
+        <option value="$PROJECT_DIR$/../users-provider7001/pom.xml" />
+        <option value="$PROJECT_DIR$/../users-consumer8001/pom.xml" />
+        <option value="$PROJECT_DIR$/../mymodel/pom.xml" />
+        <option value="$PROJECT_DIR$/../eureka-server6002/pom.xml" />
+        <option value="$PROJECT_DIR$/../hystrix-dashborad5001/pom.xml" />
+        <option value="$PROJECT_DIR$/../geteway-zuul9001/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../redis/op/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

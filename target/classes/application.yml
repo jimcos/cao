@@ -1,0 +1,55 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /demo2
+
+#数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///test?serverTimezone=GMT
+    username: root
+    password: root
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    #password: root
+    database: 0
+    timeout: 10s  # 数据库连接超时时间，2.x 中该参数的类型为Duration，这里在配置的时候需要指明单位
+    # 连接池配置，2.x中直接使用jedis或者lettuce配置连接池
+    jedis:      # 也可以使用[lettuce]
+      pool:
+        max-idle: 50        # 最大空闲连接数
+        min-idle: 10        # 最小空闲连接数
+        max-wait:  -1s        # 等待可用连接的最大时间，负数为不限制
+        max-active: -1
+    sentinel:
+      master: mymaster
+      nodes: 192.168.229.128:26379
+
+  #视图解析
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-NF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+#MyBatis配置
+mybatis:
+  #mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.cssl.pojo
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#分页配置
+pagehelper:
+  reasonable: true
+  pageSizeZero: true
+
+#加密秘钥
+#jasypt:
+#  encryptor:
+#    password: EbfYkitulv73I2
+

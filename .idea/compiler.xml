@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server6001" />
+        <module name="users-provider7001" />
+        <module name="mymodel" />
+        <module name="users-consumer8001" />
+        <module name="mongodb" />
+        <module name="eureka-server6002" />
+        <module name="hystrix-dashborad5001" />
+        <module name="geteway-zuul9001" />
+        <module name="demo3" />
+        <module name="demo2" />
+        <module name="votingsy" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="demo2" target="1.8" />
+      <module name="demo3" target="1.8" />
+      <module name="eureka-server6001" target="1.8" />
+      <module name="eureka-server6002" target="1.8" />
+      <module name="geteway-zuul9001" target="1.8" />
+      <module name="hystrix-dashborad5001" target="1.8" />
+      <module name="mongodb" target="1.8" />
+      <module name="mymodel" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="users-consumer8001" target="1.8" />
+      <module name="users-provider7001" target="1.8" />
+      <module name="votingsy" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo2" options="-parameters" />
+      <module name="demo3" options="-parameters" />
+      <module name="eureka-server6001" options="-parameters" />
+      <module name="eureka-server6002" options="-parameters" />
+      <module name="geteway-zuul9001" options="-parameters" />
+      <module name="hystrix-dashborad5001" options="-parameters" />
+      <module name="mongodb" options="-parameters" />
+      <module name="redis" options="" />
+      <module name="users-consumer8001" options="-parameters" />
+      <module name="users-provider7001" options="-parameters" />
+      <module name="votingsy" options="-parameters" />
+    </option>
+  </component>
+</project>
